@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+
+/* Menu */
+#sidebarOpen {
+    font-size: 25px;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+    color: var(--grey-color);
+}
+
+.sidebar.close {
+    left: -100%;
+}
+
+.search_bar {
+    display: none;
+}
+
+.sidebar.close .bottom_content {
+    left: -100%;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background-color: black;
+    width: 65px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px;
+    overflow-y: scroll;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 50px 0 0 0px;
+}
+
+.logo img{
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.iconmenu{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 0 0 0 4px;
+}
+
+.iconmenu img{
+    width: 60px;
+    height: 40px;
+    top: 0;
+}
+
+.iconmenu span{
+    font-weight: bold;
+    padding: 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.menufoto{
+    position: relative;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    color: grey;
+}
+
+.iconmenu:visited{
+    color: grey;
+}
+
+.iconmenu:hover{
+    color: white;
+}
+
+
+.fas{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu-item{
+    position: relative;
+    margin-left: 10px;
+}
+
+.iconmenu:hover{
+    background: grey;
+}
+
+.menu:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+    position: fixed;
+}
+
+nav:hover:-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Iniciar Sessão */
+
+#blocks{
+	width: 100%;
+	float: center;
+    position: fixed;
+}
+
+.iniciarsessao{
+	background: black;
+    height: 50px;
+    color: grey;
+	margin-bottom: 0;
+	box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article a{
+    align-items: center;
+}
+
+article h1{
+	text-align: center;
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+
+/* Corpo */
+
+.conteudo{
+    margin-left: 8%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+
+.textos{
+    margin-left: 12%;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-right: 5%;
+}
+
+
+/* Rodapé */
+
+footer{
+    background-color: black;
+    color: white;
+    height: 300px;
+    align-items: center;
+}
+
+footer:visited{
+    color: white;
+}
+
+.redessociais{
+    display: flex;
+    align-items: center;
+}
+
+.rodapé{
+    display: table;
+    align-items: center;
+}
+
+.iconrs{
+    width: 40px;
+    height: 40px;
+}
+
+.inforodape{
+    text-align: center;
+}
+
+.inforodape{
+    align-items: center;
+    text-align: center;
+}
+
+.textorodape{
+    text-align: center;
+}
