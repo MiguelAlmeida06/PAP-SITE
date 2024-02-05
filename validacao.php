@@ -14,7 +14,7 @@
 	$senha = $_POST['senha_login'];
 	
 	// Validar o utilizador
-	$sql = "select * from login where nome_login = '$utilizador' and senha_login = '$senha'";
+	$sql = "select * from login where nome_login = '$nome_login' and senha_login = '$senha_login'";
 		
     $resultado = mysqli_query($ligacao, $sql);	
 	
@@ -31,7 +31,7 @@
 		if (!isset($_SESSION)) session_start();
 		$_SESSION['nome_login'] = $utilizador;
 		
-		header("Location: ../Admin/menu.php");
+		header("Location: menu.php");
 	}
 		
 ?>
